@@ -1,7 +1,11 @@
-const buttonClass = ".CalcButton";
 const buttonList = document.querySelectorAll(".CalcButton");
-console.log(buttonList)
+var num = 0
 
-buttonList.forEach(element => {
-    console.log(element.innerHTML);
-});
+
+buttonList.forEach(button => {
+    button.addEventListener('click', event => {
+
+    //add the function necessary for the event function
+
+    });
+})

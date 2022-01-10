@@ -4,6 +4,11 @@
     font-family: Lato;
 }
 
+.calculator button{
+    background-color:lightblue;
+    border: none;
+}
+
 header,main{
     display:flex;
 }
