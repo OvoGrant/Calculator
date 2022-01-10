@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Lato;
+}
+
+header,main{
+    display:flex;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+.inputs{
+    text-align: center;
+}
+
+
+.calculator , .inputs , .animation{
+    border: 1px solid black;
+}
