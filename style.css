@@ -25,7 +25,10 @@ li{
     text-align: center;
 }
 
+.animation{
+    display: flex;
+}
 
-.calculator , .inputs , .animation{
+.calculator , .inputs {
     border: 1px solid black;
 }
