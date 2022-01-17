@@ -7,6 +7,8 @@
 
 
 Project is created with:
-* HTML5
+* HTML5 ![alt text][html]
 * JavaScript
 * CSS
+
+
