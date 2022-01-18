@@ -3,6 +3,7 @@ const tokens = document.querySelector('.tokens');
 tokens.removeChild(tokens.lastChild)
 const operands = document.querySelector('.operands');
 const equalsButton = document.querySelector('#Equals');
+const clearButton = document.querySelector('#clear')
 let x = -1;
 let p = -1;
 
@@ -18,7 +19,10 @@ const isDigit = x => !Number.isNaN(x) ;
 const clear = () => {
     x = -1;
     p = -1;
-    
+    tokens.innerHTML = "";
+    operands.innderHTML = "";
+    tokens.removeChild(tokens.lastChild)
+    operands.removeChild(operands.lastChild)
 }
 
 const evaluate = async () => {
@@ -78,7 +82,7 @@ const evaluate = async () => {
   
 
 
-
+clearButton.addEventListener('click',clear);
 //add event listeners for the buttons
 buttonList.forEach(button => {
     button.addEventListener('click' , addBlock);
