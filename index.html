@@ -7,8 +7,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-        <script src="./index.js" defer></script>
+        <link rel="stylesheet" href="./style.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -20,41 +19,56 @@
             <nav>
                 <ul>
                     <li>
-                        <a href='./Postfix-Expressions-Explanation'>How It Works</a>
+                        <a href='https://en.wikipedia.org/wiki/Reverse_Polish_notation'>How It Works</a>
                     </li>
                     <li>
-                        <a href="#">Github Repository</a>
+                        <a href="https://github.com/OvoGrant/Calculator.git">Github Repository</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class='calculator'>
-                <div>Calculator Screen</div>
+                <h2>PostFix Expression Calculator</h2>
                 <div class='inputs'>
                     <div>
-                    <button class="CalcButton">0</button>
-                    <button class="CalcButton">0</button>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
+                    <button class="CalcButton">1</button>
+                    <button class="CalcButton">2</button>
+                    <button class='CalcButton'>3</button>
+                    <button id='clear'>C</button>
                     </div>
                     <div>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
+                    <button class='CalcButton'>4</button>
+                    <button class='CalcButton'>5</button>
+                    <button class='CalcButton'>6</button>
+                    <button class='CalcButton'>-</button>
                     </div>
                     <div>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
-                    <button class='CalcButton'>0</button>
+                    <button class='CalcButton'>7</button>
+                    <button class='CalcButton'>8</button>
+                    <button class='CalcButton'>9</button>
+                    <button class="CalcButton">*</button>
+                    <div>
+                        <button class="CalcButton">0</button>
+                        <button class="CalcButton">^</button>
+                        <button id='Equals'>=</button>
+                        <button class='CalcButton'>+</button>
+                        </div>
                     </div>   
                 </div>
             </div>
-            <div class='animation'>
-                This is where the animation will be
+            <div class="titles">
+            <h3>Expression</h3>
+            <h3>Operands</h3>
             </div>
+            <div id="stacks">
+            <div class='tokens'>
+            </div>
+            <div  class="operands">
+            </div>
+            </div>
+
+            <script src="./index.js"></script>
         </main>
         <footer>
         </footer>
