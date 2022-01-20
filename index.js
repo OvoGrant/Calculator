@@ -20,7 +20,7 @@ const clear = () => {
     x = -1;
     p = -1;
     tokens.innerHTML = "";
-    operands.innderHTML = "";
+    operands.innerHTML = "";
     tokens.removeChild(tokens.lastChild)
     operands.removeChild(operands.lastChild)
 }
